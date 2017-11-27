@@ -1,0 +1,75 @@
+
+
+    
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="main-logo"><a class="navbar-brand" href="/"><span class="logo-postfix">postfix</span><span class="logo-dot">.</span><span class="logo-admin">admin</span></a>
+            </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+				
+                <li {% if page.name == 'index' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/index.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Index</a></li>
+                    
+                <li {% if page.name == 'install' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/docs/install.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Install</a></li>
+
+				<li {% if page.name == 'faq' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/docs/faq.html"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> FAQ</a></li>
+                    
+                 <li {% if page.layout == 'postfix' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/docs/postfix.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Postfix</a></li>
+                    
+                 <li {% if page.layout == 'dovecot' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/docs/dovecot.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Dovecot</a></li>
+                    
+                 <li {% if page.layout == 'security' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/docs/security.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Security</a></li>
+                    
+                        
+           
+                    
+                    
+                <li {% if page.layout == 'vacation' %}class="active"{% endif %}>
+                    <a href="{{ page.root }}/docs/vacation.html"><span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Vacation</a></li>
+                
+                   <li {% if page.layout == 'livedemo' %}class="active"{% endif %}>
+                    <a href="http://pfa.exampople.com"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Live Demo</a></li>
+                    
+               
+    
+                    
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Project <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="https://github.com/postfixadmin/" target="github"><span class="glyphicon glyphicon-object-align-horizontal" aria-hidden="true"></span> PostfixAdmin @ github</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">PostfixAdmin</li>
+                               <li><a href="https://github.com/postfixadmin/postfixadmin" target="github"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Source code</a></li>
+                            <li><a href="https://github.com/postfixadmin/postfixadmin/issues" starget="github"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Issues</a></li>
+       
+                        <li class="dropdown-header">postfixadmin.github.io</li>
+                        <li><a href="https://github.com/postfixadmin/postfixadmin.github.io" target="github"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Source code</a></li>
+                        <li><a href="https://github.com/postfixadmin/postfixadmin.github.io/issues" starget="github"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Issues</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="https://gitter.im/postfixadmin/community" target="_blank">Chat on gitter.im</a></li>
+                        <li><a href="http://stackoverflow.com/questions/tagged/postfixadmin" target="_blank">PostfixAdmin at StackOverflow</a></li>
+                    </ul>
+                <li>
+                 
+            </ul>
+        </div>
+    </div>
+</nav>
