@@ -4,18 +4,11 @@ name: dovecot
 layout: pfa
 ---
 
-#
-# Dovecot configuration for Postfix Admin
-# Originally written by: Massimo <AndyCapp> Danieli
-# Revised by: Sampsa Hario <shario> for Dovecot v1.0
-# Revised by: David Goodwin <david@palepurple.co.uk> for Dovecot 2.1.x  (2014/01/02)
-#
+Complete Dovecot documentation:
 
-More complete Dovecot documentation:
-
-http://wiki.dovecot.org/Quota
-http://wiki.dovecot.org/Quota/Dict
-http://www.opensourcehowto.org/how-to/mysql/mysql-users-postfixadmin-postfix-dovecot--squirrelmail-with-userprefs-stored-in-mysql.html
+- [Quota](http://wiki.dovecot.org/Quota)
+- http://wiki.dovecot.org/Quota/Dict
+- http://www.opensourcehowto.org/how-to/mysql/mysql-users-postfixadmin-postfix-dovecot--squirrelmail-with-userprefs-stored-in-mysql.html
 
 
 Here are the relevant parts of Dovecot v2.1.x configuration for Postfixadmin setup.
@@ -27,10 +20,10 @@ uses dict backend to store used quotas as key=value pairs so that they can
 be viewed real-time in Postfixadmin.
 
 
-1. Dovecot setup
------------------
+Dovecot setup
+-----------------------
 
-A basic /etc/dovecot/dovecot.conf is as follows, this was generated using 'dovecot -n' on a vanilla install and then
+A basic `/etc/dovecot/dovecot.conf` is as follows, this was generated using 'dovecot -n' on a vanilla install and then
 changing to talk to a PostgreSQL or MySQL database. 
 
 # BEGIN /etc/dovecot/dovecot.conf:

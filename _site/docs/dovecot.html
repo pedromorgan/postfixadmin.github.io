@@ -113,18 +113,13 @@
                     <h1>Dovecot</h1>
                 </div>
                 <div class="main">
-                    <p>#</p>
-<h1 id="dovecot-configuration-for-postfix-admin">Dovecot configuration for Postfix Admin</h1>
-<h1 id="originally-written-by-massimo--danieli">Originally written by: Massimo <AndyCapp> Danieli</AndyCapp></h1>
-<h1 id="revised-by-sampsa-hario--for-dovecot-v10">Revised by: Sampsa Hario <shario> for Dovecot v1.0</shario></h1>
-<h1 id="revised-by-david-goodwin-davidpalepurplecouk-for-dovecot-21x--20140102">Revised by: David Goodwin <a href="mailto:david@palepurple.co.uk">david@palepurple.co.uk</a> for Dovecot 2.1.x  (2014/01/02)</h1>
-<p>#</p>
+                    <p>Complete Dovecot documentation:</p>
 
-<p>More complete Dovecot documentation:</p>
-
-<p>http://wiki.dovecot.org/Quota
-http://wiki.dovecot.org/Quota/Dict
-http://www.opensourcehowto.org/how-to/mysql/mysql-users-postfixadmin-postfix-dovecot–squirrelmail-with-userprefs-stored-in-mysql.html</p>
+<ul>
+  <li><a href="http://wiki.dovecot.org/Quota">Quota</a></li>
+  <li>http://wiki.dovecot.org/Quota/Dict</li>
+  <li>http://www.opensourcehowto.org/how-to/mysql/mysql-users-postfixadmin-postfix-dovecot–squirrelmail-with-userprefs-stored-in-mysql.html</li>
+</ul>
 
 <p>Here are the relevant parts of Dovecot v2.1.x configuration for Postfixadmin setup.</p>
 
@@ -134,13 +129,9 @@ http://www.opensourcehowto.org/how-to/mysql/mysql-users-postfixadmin-postfix-dov
 uses dict backend to store used quotas as key=value pairs so that they can
 be viewed real-time in Postfixadmin.</p>
 
-<ol>
-  <li>
-    <h2 id="dovecot-setup">Dovecot setup</h2>
-  </li>
-</ol>
+<h2 id="dovecot-setup">Dovecot setup</h2>
 
-<p>A basic /etc/dovecot/dovecot.conf is as follows, this was generated using ‘dovecot -n’ on a vanilla install and then
+<p>A basic <code class="highlighter-rouge">/etc/dovecot/dovecot.conf</code> is as follows, this was generated using ‘dovecot -n’ on a vanilla install and then
 changing to talk to a PostgreSQL or MySQL database.</p>
 
 <h1 id="begin-etcdovecotdovecotconf">BEGIN /etc/dovecot/dovecot.conf:</h1>
