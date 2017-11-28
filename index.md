@@ -1,7 +1,6 @@
 ---
 root: .
 title: PostfixAdmin home
-name: index
 layout: pfa
 
 MAIN_TITLE: Welcome to Revel, the Web Framework for Go!

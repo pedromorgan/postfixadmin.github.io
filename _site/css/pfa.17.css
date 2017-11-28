@@ -1,9 +1,5 @@
 
 
-.navbar {
-        border-radius: 0;
-        margin-bottom: 0;
-}
 #main-logo {
     sswidth: 260px;
     sspadding: 10px 0 0 20px;
@@ -41,13 +37,25 @@
    text-decoration: none;
 }
 
-
+/************************************************/
 /*top nav */
 li.dropdown-header {
   font-weight: bold;  
   
 }
 
+
+.navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+}
+
+#navbar li.active {
+	background-color: #dddddd;
+}
+#navbar li a {
+	color: #444444;
+}
 
 /************************************************/
 /* Left navigation */

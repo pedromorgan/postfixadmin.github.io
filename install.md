@@ -1,6 +1,5 @@
 ---
 title: Install
-name: install
 layout: pfa
 ---
 
