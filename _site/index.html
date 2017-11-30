@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Welcome to Revel, the Web Framework for Go!</title>
+<title>Welcome to PostfixAdmin | PostfixAdmin - Web amdin interface for postfix mailserver</title>
 <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> 
 <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
 
@@ -43,29 +43,29 @@
             <ul class="nav navbar-nav">
 				
                 <li class="active">
-                    <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <a href="/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
                     
                 <li >
-                    <a href="install.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Install</a></li>
+                    <a href="/install.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Install</a></li>
 
                     
                  <li >
-                    <a href="postfix.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Postfix</a></li>
+                    <a href="/postfix.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Postfix</a></li>
                     
                  <li >
-                    <a href="dovecot.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Dovecot</a></li>
+                    <a href="/dovecot.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Dovecot</a></li>
                     
                  <li >
-                    <a href="security.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Security</a></li>
+                    <a href="/security.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Security</a></li>
                     
                         
            
 				<li >
-                    <a href="faq.html"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> FAQ</a></li>
+                    <a href="/faq.html"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> FAQ</a></li>
                     
                     
                 <li >
-                    <a href="vacation.html"><span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Vacation</a></li>
+                    <a href="/vacation.html"><span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Vacation</a></li>
                 
       
                
@@ -99,7 +99,7 @@
 </nav>
 
 
-    <div class="container revel-docs">
+    <div class="container">
         <div class="row">
             <div class="col-md-3">
                
@@ -108,10 +108,24 @@
             <div class="col-md-9">
                 <div class="page-header">
                     <a href="https://github.com/postfixadmin/postfixadmin.github.io/edit/master/index.md" class="improve-page btn dbtn-info" target="_blank"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Improve Page</a>
-                    <h1>PostfixAdmin home</h1>
+                    <h1>Welcome to PostfixAdmin</h1>
                 </div>
                 <div class="main">
-                    <p>Postfix Admin is a web based interface to configure and manage a Postfix based email server for many users.</p>
+                    <p><strong>PostfixAdmin</strong> is php powered web based interface to configure and manage 
+a <a href="http://www.postfix.org/">Postfix</a> based email server.</p>
+
+<p><img src="https://g.gravizo.com/svg?
+  digraph G {
+    postfixadmin  [label=&quot;PostfixAdmin&quot;, style=filled, fillcolor=pink];
+    database [shape=box, style=filled, fillcolor=lightyellow];
+    postfix  [label=&quot;Postfix&quot;, style=filled, fillcolor=lightgreen];
+    dovecot  [style=filled, fillcolor=lightgreen];
+    autoreply  [style=filled, fillcolor=lightgreen];
+    postfix -&gt; database [label=&quot;domains,\nusers,\naliases&quot;, fontsize=10];
+    dovecot -&gt; database [label=&quot;mailbox&quot;, fontsize=10];
+    autoreply -&gt; database [label=&quot;vacation&quot;, fontsize=10];
+    database -&gt; postfixadmin [dir=both];
+  }" alt="Alt text" /></p>
 
 <h2 id="features">Features</h2>
 
@@ -127,15 +141,11 @@
   <li>Squirrelmail plugin</li>
 </ul>
 
-<h2 id="requirements">Requirements</h2>
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> PostfixAdmin is intended for new installs with its database schema which postfix, dovecot etc use.
+</div>
 
-<ul>
-  <li>Postfix (success has been reported with Exim!)</li>
-  <li>MySQL or PostgreSQL or SQLite (&gt;= 3.12)</li>
-  <li>PHP</li>
-  <li>And presumably a compatible IMAP/POP3 server (dovecot and courier seem to be the most popular)</li>
-</ul>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UWh3Jvj6MC4" frameborder="0" allowfullscreen=""></iframe>
 
                     
                     

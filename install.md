@@ -3,16 +3,19 @@ title: Install
 layout: pfa
 ---
 
-REQUIREMENTS
-------------
-- Postfix 2.0 or higher.
+### Requirements
+
+- Postfix 2.0 or higher
+-- (success has been reported with Exim!)
 - Apache 1.3.27 / Lighttpd 1.3.15 or higher.
 - PHP 5.1.2 or higher.
-- one of the following databases:
+- Databases:
   - MySQL 3.23 or higher (5.x recommended)
-  - MariaDB (counts as MySQL ;-)
+  - MariaDB (counts as MySQL 5+ ;-)
   - PostgreSQL 7.4 (or higher)
   - SQLite 3.12 (or higher)
+- IMAP/POP3
+  - Presumably a compatible server such as dovecot and courier which are the most popular
 
 
 READ THIS FIRST!

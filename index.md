@@ -1,13 +1,27 @@
 ---
 root: .
-title: PostfixAdmin home
+title: Welcome to PostfixAdmin
 layout: pfa
-
-MAIN_TITLE: Welcome to Revel, the Web Framework for Go!
 ---
 
-Postfix Admin is a web based interface to configure and manage a Postfix based email server for many users.
+**PostfixAdmin** is php powered web based interface to configure and manage 
+a [Postfix](http://www.postfix.org/) based email server.
  
+
+![Alt text](https://g.gravizo.com/svg?
+  digraph G {
+    postfixadmin  [label="PostfixAdmin", style=filled, fillcolor=pink];
+    database [shape=box, style=filled, fillcolor=lightyellow];
+    postfix  [label="Postfix", style=filled, fillcolor=lightgreen];
+    dovecot  [style=filled, fillcolor=lightgreen];
+    autoreply  [style=filled, fillcolor=lightgreen];
+    postfix -> database [label="domains,\nusers,\naliases", fontsize=10];
+    dovecot -> database [label="mailbox", fontsize=10];
+    autoreply -> database [label="vacation", fontsize=10];
+    database -> postfixadmin [dir=both];
+  }
+)
+
 ## Features
 
 - manage mailboxes, virtual domains and aliases
@@ -20,11 +34,8 @@ Postfix Admin is a web based interface to configure and manage a Postfix based e
 - commandline client postfixadmin-cli for those who don't want to click around in a web interface ;-)
 - Squirrelmail plugin
 
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> PostfixAdmin is intended for new installs with its database schema which postfix, dovecot etc use.
+</div>
 
-## Requirements
-
-- Postfix (success has been reported with Exim!)
-- MySQL or PostgreSQL or SQLite (>= 3.12)
-- PHP
-- And presumably a compatible IMAP/POP3 server (dovecot and courier seem to be the most popular)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UWh3Jvj6MC4" frameborder="0" allowfullscreen></iframe>

@@ -113,42 +113,7 @@ li.dropdown-header {
 /*********************/
 /* Link decorators */
 
-/* golang.org and base packages */
-.main a[href^="https://www.golang.org"],
-.main a[href^="http://www.golang.org"],
-.main a[href^="http://golang.org"],
-.main a[href^="https://golang.org"]
-{ 
-  color: #222222; 
-  background-color: #CBFFFD !important;
-  font-family: monospace;
-  background: url(/img/gopher-link.png);
-  background-position: top right;
-  background-repeat: no-repeat;
-  padding-right: 12px;
-}
-/* godoc.org */
-.deadmain a[href^="https://godoc.org"] code { 
-    color: #375EAB; 
-    background-color: black !important;
-    font-family: monospace;
-    ssbackground: url(/img/godoc.png);
-    background-position: top right;
-    background-repeat: no-repeat;
-    padding-right: 16px;
-}
 
-/* godoc.org + revel */
-.main a[href^="https://godoc.org/github.com/revel"] { 
-	color: #535353 !important; 
-	background-color: #E9F5FF !important;
-	font-family: monospace;
-	font-weight: bold;
-	/* background: url(/img/godoc.png);
-	background-position: top right;
-	background-repeat: no-repeat; padding-right: 16px; */
-	
-}
 
 .main code {
     deadcolor: green;
