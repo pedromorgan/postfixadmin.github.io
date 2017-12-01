@@ -1,14 +1,15 @@
 
 
-#main-logo {
-    sswidth: 260px;
-    sspadding: 10px 0 0 20px;
-}
+#main-logo {}
 #main-logo a {
    font-family: Helvetica !important;
    color: #CCCCCC;
-   font-size: 18pt;
+   font-size: 16pt;
    font-weight: bold;
+   padding: 20px 0 0 50px;
+   background-image: url("/img/favicon.png") !important;
+   background-repeat: no-repeat;
+   margin-right: 10px;
 }
 #main-logo a:hover {
     text-decoration: none;
@@ -19,7 +20,7 @@
 	color: black;
 }
 #main-logo .logo-dot {
-	color: #E31c1c;
+	color: #DE6060;
 }
 #main-logo .logo-admin {
 	color: #7e7e7e;
@@ -45,17 +46,23 @@ li.dropdown-header {
 }
 
 
-.navbar {
-        border-radius: 0;
-        margin-bottom: 0;
+
+#topnav li {
+	background-color: #dddddd;
+	
+}
+#topnav li a {
+	color: #444444;
+	padding: 10px 10px;	
 }
 
-#navbar li.active {
-	background-color: #dddddd;
+#topnav li.active {
+	background-color: #666666;
 }
-#navbar li a {
-	color: #444444;
+#topnav li.active a {
+	color: white;
 }
+
 
 /************************************************/
 /* Left navigation */
@@ -142,14 +149,18 @@ li.dropdown-header {
 }
 
 .page-header h1 {
-    font-size: 23pt;
+    font-size: 24pt;
 	background-color: #dddddd;
+	border: 1px solid #cccccc;
+	padding: 5px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
-.improve-page {
+/* .improve-page {
     position: absolute;
     bottom: 0;
     right: 0;
-}
+} */
 
 
 .main h2, .main h3, .main h4 {

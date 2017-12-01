@@ -9,15 +9,15 @@
 <link rel="icon" href="/img/favicon.ico" type="image/x-icon" /> 
 <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
 
-<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="css/jekyll-github.css" rel="stylesheet">
+<link href="/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="/css/jekyll-github.css" rel="stylesheet">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
 
 
-<link href="css/pfa.17.css" rel="stylesheet">
+<link href="/css/pfa.17.css" rel="stylesheet">
 
 
 </head>
@@ -30,16 +30,16 @@
 <nav class="navbar">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div id="main-logo"><a class="navbar-brand" href="index.html"><span class="logo-postfix">postfix</span><span class="logo-dot">.</span><span class="logo-admin">admin</span></a>
+            <div id="main-logo"><a class="navbar-brand" href="/index.html"><span class="logo-postfix">postfix</span><span class="logo-dot">.</span><span class="logo-admin">admin</span></a>
             </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="topnav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 				
                 <li class="active">
@@ -50,10 +50,10 @@
 
                     
                  <li >
-                    <a href="/postfix.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Postfix</a></li>
+                    <a href="/setup/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Setup</a></li>
                     
-                 <li >
-                    <a href="/dovecot.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Dovecot</a></li>
+				<li >
+                    <a href="/addons/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Addons</a></li>
                     
                  <li >
                     <a href="/security.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Security</a></li>
@@ -67,10 +67,6 @@
                 <li >
                     <a href="/vacation.html"><span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Vacation</a></li>
                 
-      
-               
-    
-                    
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Project <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -102,28 +98,37 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-               
+                <div class="leftnav">
+    <ul class="nav">
+        
+    </ul>
+</div>
+
             </div>
 
             <div class="col-md-9">
                 <div class="page-header">
-                    <a href="https://github.com/postfixadmin/postfixadmin.github.io/edit/master/index.md" class="improve-page btn dbtn-info" target="_blank"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Improve Page</a>
+                    
                     <h1>Welcome to PostfixAdmin</h1>
                 </div>
                 <div class="main">
-                    <p><strong>PostfixAdmin</strong> is php powered web based interface to configure and manage 
-a <a href="http://www.postfix.org/">Postfix</a> based email server.</p>
+                    <p><strong>PostfixAdmin</strong> is php powered web interface to configure and manage 
+a <a href="http://www.postfix.org/">Postfix</a> email server.</p>
+
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> PostfixAdmin is intended for new installs with its database schema which postfix, dovecot etc use.
+</div>
 
 <p><img src="https://g.gravizo.com/svg?
   digraph G {
-    postfixadmin  [label=&quot;PostfixAdmin&quot;, style=filled, fillcolor=pink];
-    database [shape=box, style=filled, fillcolor=lightyellow];
+    postfixadmin  [label=&quot;PostfixAdmin&quot;, style=filled, fillcolor=orange];
+    database [shape=box, style=filled, fillcolor=pink];
     postfix  [label=&quot;Postfix&quot;, style=filled, fillcolor=lightgreen];
     dovecot  [style=filled, fillcolor=lightgreen];
     autoreply  [style=filled, fillcolor=lightgreen];
-    postfix -&gt; database [label=&quot;domains,\nusers,\naliases&quot;, fontsize=10];
+    postfix -&gt; database [label=&quot;domains, users, aliases&quot;, fontsize=10];
     dovecot -&gt; database [label=&quot;mailbox&quot;, fontsize=10];
-    autoreply -&gt; database [label=&quot;vacation&quot;, fontsize=10];
+    autoreply -&gt; database [label=&quot;on holiday?&quot;, fontsize=10];
     database -&gt; postfixadmin [dir=both];
   }" alt="Alt text" /></p>
 
@@ -141,9 +146,31 @@ a <a href="http://www.postfix.org/">Postfix</a> based email server.</p>
   <li>Squirrelmail plugin</li>
 </ul>
 
-<div class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> PostfixAdmin is intended for new installs with its database schema which postfix, dovecot etc use.
-</div>
+<h2 id="overview">Overview</h2>
+
+<p><strong>PostfixAdmin</strong> has a concept of a</p>
+<ul>
+  <li>“global” administrator (think ‘root’ superuser)</li>
+  <li>domain administrators</li>
+  <li>regular users</li>
+</ul>
+
+<p>When PostfixAdmin is initially installed, the <code class="highlighter-rouge">setup.php</code> url</p>
+<ul>
+  <li>creates the global administrators account</li>
+  <li>Using this global account, one can also create 
+domain administrators who are 
+limited to making changes within the domains you specify for them.</li>
+</ul>
+
+<p>Needless to say, as a global administrator, you can do all kinds of bad 
+things such as deleting domains and stopping delivery of mail to a 
+particular mailbox. So take care, and if unsure take semi-regular backups.</p>
+
+<p>If a login is not an administrator i.e. ‘regular’ user who just has 
+a mailbox on the server, then the user will only see functionality to 
+modify their own account - e.g. change password, edit forward records and specify 
+whether on vacation (out of office) etc.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UWh3Jvj6MC4" frameborder="0" allowfullscreen=""></iframe>
 

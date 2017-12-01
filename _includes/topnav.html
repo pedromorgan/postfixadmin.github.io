@@ -4,16 +4,16 @@
 <nav class="navbar">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div id="main-logo"><a class="navbar-brand" href="index.html"><span class="logo-postfix">postfix</span><span class="logo-dot">.</span><span class="logo-admin">admin</span></a>
+            <div id="main-logo"><a class="navbar-brand" href="/index.html"><span class="logo-postfix">postfix</span><span class="logo-dot">.</span><span class="logo-admin">admin</span></a>
             </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="topnav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 				
                 <li {% if page.name == 'index.md' %}class="active"{% endif %}>
@@ -23,11 +23,11 @@
                     <a href="/install.html"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Install</a></li>
 
                     
-                 <li {% if page.name == 'postfix.md' %}class="active"{% endif %}>
-                    <a href="/postfix.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Postfix</a></li>
+                 <li {% if page.name == 'setup.md' %}class="active"{% endif %}>
+                    <a href="/setup/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Setup</a></li>
                     
-                 <li {% if page.name == 'dovecot.md' %}class="active"{% endif %}>
-                    <a href="/dovecot.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Dovecot</a></li>
+				<li {% if page.name == 'setup.md' %}class="active"{% endif %}>
+                    <a href="/addons/index.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Addons</a></li>
                     
                  <li {% if page.name == 'security.md' %}class="active"{% endif %}>
                     <a href="/security.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Security</a></li>
@@ -41,10 +41,6 @@
                 <li {% if page.layout == 'vacation' %}class="active"{% endif %}>
                     <a href="/vacation.html"><span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> Vacation</a></li>
                 
-      
-               
-    
-                    
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Project <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
