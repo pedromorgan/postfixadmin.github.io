@@ -42,14 +42,12 @@
 /*top nav */
 li.dropdown-header {
   font-weight: bold;  
-  
 }
 
 
 
 #topnav li {
 	background-color: #dddddd;
-	
 }
 #topnav li a {
 	color: #444444;
@@ -123,7 +121,7 @@ li.dropdown-header {
 
 
 .main code {
-    deadcolor: green;
+  
     background: 0;
     border: 0;
     font-family: monospace
@@ -150,7 +148,8 @@ li.dropdown-header {
 
 .page-header h1 {
     font-size: 24pt;
-	background-color: #dddddd;
+	background-color: #444444;
+	color: #dddddd;
 	border: 1px solid #cccccc;
 	padding: 5px;
 	border-top-right-radius: 15px;
@@ -164,15 +163,17 @@ li.dropdown-header {
 
 
 .main h2, .main h3, .main h4 {
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    frfborder-left: 1px solid #ddd;
+    deadborder-bottom: 1px solid #ddd;
 }
 .main h2 {
-    font-size: 20pt;
+    font-size: 15pt;
+	color: #444444;
     font-weight:800;
     padding: .5em;
     margin: 2em 0 1em;
-    border-left: 7px solid #ddd;
+    ddborder-left: 7px solid #ddd;
+	border-bottom: 1px solid #cccccc;
 }
 
 .main h3 {
@@ -232,7 +233,7 @@ li.dropdown-header {
     color: #92214E;
 }
 .highlight .language-htmldjango .nv {
-     color: #219277;
+	color: #219277;
     font-weight: bold;
 }
 

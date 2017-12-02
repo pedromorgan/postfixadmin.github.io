@@ -15,23 +15,29 @@
             </div>
 
             <div class="col-md-9">
+                
                 <div class="page-header">
                     {% comment %}
                     <a href="https://github.com/postfixadmin/postfixadmin.github.io/edit/master/{{ page.path }}" class="improve-page btn dbtn-info" target="_blank"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Improve Page</a> 
                     {% endcomment %}
                     <h1>{{ page.title }}</h1>
                 </div>
+                
                 <div class="main">
                     {{ content }}
-                    
-                    
                 </div>
+                
             </div>
         </div>
         
         <footer>
             <p>&copy; PostfixAdmin.Team - PostfixAdmin is released under the <a href="https://github.com/postfixadmin/postfixadmin/blob/master/LICENSE.TXT">Various FOSS License</a></p>
         </footer>
+        
+        <pre>DEBUG:
+        page{{page}}
+        layout={{layout}}
+        </pre>
     </div>
 </body>
 </html>

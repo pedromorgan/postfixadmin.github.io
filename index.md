@@ -1,5 +1,5 @@
 ---
-root: .
+topnav: index
 title: Welcome to PostfixAdmin
 layout: pfa
 ---
@@ -8,20 +8,20 @@ layout: pfa
 a [Postfix](http://www.postfix.org/) email server.
  
 <div class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> PostfixAdmin is intended for new installs with its database schema which postfix, dovecot etc use.
+  <strong>Important!</strong> <b>PostfixAdmin</b> is intended for a new mailserver install with its database schema which postfix, dovecot et all use.
 </div>
 
 ![Alt text](https://g.gravizo.com/svg?
   digraph G {
-    postfixadmin  [label="PostfixAdmin", style=filled, fillcolor=orange];
-    database [shape=box, style=filled, fillcolor=pink];
-    postfix  [label="Postfix", style=filled, fillcolor=lightgreen];
-    dovecot  [style=filled, fillcolor=lightgreen];
+    postfixadmin  [label="PostfixAdmin Website", style=filled, fillcolor=orange];
+    database [label="Database", shape=box, style=filled, fillcolor=pink];
+    postfix  [label="Postfix smtp", style=filled, fillcolor=lightgreen];
+    imap  [label="Imap Server", style=filled, fillcolor=lightgreen];
     autoreply  [style=filled, fillcolor=lightgreen];
-    postfix -> database [label="domains, users, aliases", fontsize=10];
-    dovecot -> database [label="mailbox", fontsize=10];
-    autoreply -> database [label="on holiday?", fontsize=10];
-    database -> postfixadmin [dir=both];
+    postfix -> database [label="check mailboxes", fontsize=10];
+    imap -> database [label="imap,pop3", fontsize=10];
+    autoreply -> database [label="on holiday ?", fontsize=10];
+    database -> postfixadmin [label="admin mailserver", dir=both, fontsize=10];
   }
 )
 
@@ -39,12 +39,12 @@ a [Postfix](http://www.postfix.org/) email server.
 
 ## Overview
 
-**PostfixAdmin** has a concept of a 
-- "global" administrator (think 'root' superuser) 
+**PostfixAdmin** has the concept of:
+- global administrator; think root, administrator, superuser
 - domain administrators
 - regular users
 
-When PostfixAdmin is initially installed, the `setup.php` url
+When **PostfixAdmin** is initially installed, the `setup.php` url
 - creates the global administrators account
 - Using this global account, one can also create 
   domain administrators who are 

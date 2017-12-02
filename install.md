@@ -3,7 +3,7 @@ title: Install
 layout: pfa
 ---
 
-### Requirements
+## Requirements
 
 - Postfix 2.0 or higher
 -- (success has been reported with Exim!)
@@ -18,13 +18,12 @@ layout: pfa
   - Presumably a compatible server such as dovecot and courier which are the most popular
 
 
-READ THIS FIRST!
-----------------
-When this is an upgrade from a previous version of Postfix Admin, please read 
-DOCUMENTS/UPGRADE.TXT also!
+## Upgrade
 
-If you need to setup Postfix to be able to handle Virtual Domains and Virtual
-Users check out:
+When upgrading from a previous version of **PostfixAdmin**, please read 
+[DOCUMENTS/UPGRADE.TXT](https://github.com/postfixadmin/postfixadmin/blob/master/DOCUMENTS/UPGRADE.txt) also!
+
+If you need to setup Postfix to be able to handle Virtual Domains and Virtual Users check out:
 
   - the PostfixAdmin documentation in the DOCUMENTS/ directory
   - our wiki at https://sourceforge.net/p/postfixadmin/wiki/
